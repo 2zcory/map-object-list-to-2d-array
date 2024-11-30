@@ -1,0 +1,38 @@
+{
+  "name": "@izutils/map-object-list-to-2d-array",
+  "version": "1.0.0",
+  "description": "Converting an array of objects to a 2-dimensional array",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "preversion": "pnpm build",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "izyroc",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/2zcory/map-object-list-to-2d-array.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2zcory/map-object-list-to-2d-array/issues"
+  },
+  "homepage": "https://github.com/2zcory/map-object-list-to-2d-array#readme"
+}
