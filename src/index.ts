@@ -1,4 +1,4 @@
-export declare namespace NSMapObjectListTo2DArray {
+export declare namespace mapObjectListTo2DArray {
   interface DataObject {
     [key: string]: any;
   }
@@ -12,10 +12,10 @@ export declare namespace NSMapObjectListTo2DArray {
 
 export const mapObjectListTo2DArray = <
   TData extends
-    NSMapObjectListTo2DArray.DataObject = NSMapObjectListTo2DArray.DataObject,
+    mapObjectListTo2DArray.DataObject = mapObjectListTo2DArray.DataObject,
 >(
   list: TData[],
-  outputSchema: NSMapObjectListTo2DArray.OutputSchema<TData>,
+  outputSchema: mapObjectListTo2DArray.OutputSchema<TData>,
 ) => {
   return list.map((item, index) =>
     outputSchema.map((key) => {
