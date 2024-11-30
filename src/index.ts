@@ -6,7 +6,7 @@ export declare namespace NSMapObjectListTo2DArray {
   export type DataObjectList = Array<DataObject>;
 
   export type OutputSchema<TData extends DataObject = DataObject> = Array<
-    keyof DataObject | ((item: TData, index: number) => unknown)
+    keyof TData | ((item: TData, index: number) => unknown)
   >;
 }
 
