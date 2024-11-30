@@ -1,6 +1,6 @@
 {
   "name": "@izutils/map-object-list-to-2d-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converting an array of objects to a 2-dimensional array",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
